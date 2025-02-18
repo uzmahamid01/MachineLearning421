@@ -56,8 +56,7 @@ def visualize_result(X, y, W):
                          np.linspace(y_min, y_max, 200))
 
     # Compute decision boundary: w^T x = 0 -> sigmoid(w1 * x1 + w2 * x2 + b) = 0.5
-    grid_points = np.c_[np.ones((xx.ravel().shape[0], 1)), xx.ravel(), yy.ravel()]  # Add bias term
-    Z = np.dot(grid_points, W)  
+    grid_points = np.c_[np.ones((xx.ravel().shape[0], 1)), xx.ravel(), yy.ravel()] 
     Z = 1 / (1 + np.exp(-np.clip(Z, -100, 100)))  
     Z = Z.reshape(xx.shape)
 
@@ -74,7 +73,6 @@ def visualize_result(X, y, W):
     plt.title('Logistic Regression Sigmoid Decision Boundary')
     plt.legend(loc='upper right', fontsize=12)
 
-    # Save the plot as 'train_result_sigmoid.png'
     plt.savefig('train_result_sigmoid.png', dpi=300)
     plt.show()
 
@@ -369,8 +367,6 @@ def main():
     # visualize_result_multi(train_X[:, 1:3], train_y_softmax, softmax_classifier.get_params())
 
     # visualize_result(train_X[:, 1:3], train_y_sigmoid, sigmoid_classifier.get_params())
-
-
 
 
     ################Compare and report the observations/prediction accuracy
