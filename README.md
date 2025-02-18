@@ -134,7 +134,7 @@ csce421-machine-learning/
 
 #### Books
 - **Currently Reading**:
-  - *Why Machines Learn* (Latest book, 2024) - A modern take on machine learning concepts and applications.
+  - *[Why Machines Learn](https://anilananthaswamy.com/why-machines-learn)* (Latest book, 2024) - A modern take on machine learning concepts and applications.
 - **Textbooks**:
   - Yaser S. Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin: *Learning from Data* - A foundational book for understanding machine learning principles.
   - Christopher M. Bishop and Hugh Bishop: *Deep Learning: Foundations and Concepts* - A comprehensive guide to deep learning theory and practice.
