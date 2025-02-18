@@ -145,7 +145,7 @@ csce421-machine-learning/
   - [Geeks for Geeks Machine Learning](https://www.geeksforgeeks.org/machine-learning/) - A great resource for tutorials, articles, and coding examples on machine learning.
 
 ### Personal Resources
-- [Linear Regression](https://www.notion.so/Linear-Regression-199b3231923b8081abb6d8212fe98b73?pvs=4)
+- [Linear Regression](https://buttoned-robe-004.notion.site/Linear-Regression-199b3231923b8081abb6d8212fe98b73?pvs=4)
 
 ---
 
