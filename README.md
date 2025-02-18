@@ -1,6 +1,4 @@
-# MachineLearning421
- 
-# CSCE 421: Machine Learning
+ # CSCE 421: Machine Learning
 
 Welcome to the repository for CSCE 421 - Machine Learning! This repository contains code, projects, and resources related to the ML. 
 
