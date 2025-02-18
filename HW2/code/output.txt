@@ -1,0 +1,76 @@
+----------------------Q1 - Feature Visualization ----------------------
+
+----------------------Q2/3 - Logistic Regression Sigmoid Case  ----------------------
+
+[ 0.18761413  3.55944904 -2.06327285]
+0.9444444444444444
+[ 0.18761413  3.55944904 -2.06327285]
+0.9444444444444444
+[10.8808743  31.76281109  1.82080621]
+0.9718518518518519
+[11.75735097 31.63686155  1.43510667]
+0.9637037037037037
+[ 4.82931896 23.62973146 -2.96419827]
+0.9718518518518519
+Learning Rate: 0.01, Max Iterations: 50, Accuracy: 0.5807407407407408
+Learning Rate: 0.01, Max Iterations: 100, Accuracy: 0.5807407407407408
+Learning Rate: 0.01, Max Iterations: 200, Accuracy: 0.5837037037037037
+Learning Rate: 0.1, Max Iterations: 50, Accuracy: 0.6592592592592592
+Learning Rate: 0.1, Max Iterations: 100, Accuracy: 0.8088888888888889
+Learning Rate: 0.1, Max Iterations: 200, Accuracy: 0.9074074074074074
+Learning Rate: 0.5, Max Iterations: 50, Accuracy: 0.92
+Learning Rate: 0.5, Max Iterations: 100, Accuracy: 0.9444444444444444
+Learning Rate: 0.5, Max Iterations: 200, Accuracy: 0.9555555555555556
+Learning Rate: 1, Max Iterations: 50, Accuracy: 0.9444444444444444
+Learning Rate: 1, Max Iterations: 100, Accuracy: 0.9555555555555556
+Learning Rate: 1, Max Iterations: 200, Accuracy: 0.9651851851851851
+Best Model - Accuracy: 0.9651851851851851
+Test Accuracy: 0.9458874458874459
+----------------------Q4 - Logistic Multiple-class Case  ----------------------
+
+[[  6.85696345  -1.01365691  -5.84330654]
+ [  0.24271543  15.7067807  -15.94949613]
+ [ 10.34512345  -8.58376113  -1.76136232]]
+0.8930434782608696
+Learning Rate: 0.01, Max Iterations: 50, Batch Size: 1, Accuracy: 0.8904347826086957
+Learning Rate: 0.01, Max Iterations: 50, Batch Size: 10, Accuracy: 0.8765217391304347
+Learning Rate: 0.01, Max Iterations: 50, Batch Size: 100, Accuracy: 0.7047826086956521
+Learning Rate: 0.01, Max Iterations: 100, Batch Size: 1, Accuracy: 0.8926086956521739
+Learning Rate: 0.01, Max Iterations: 100, Batch Size: 10, Accuracy: 0.888695652173913
+Learning Rate: 0.01, Max Iterations: 100, Batch Size: 100, Accuracy: 0.7126086956521739
+Learning Rate: 0.01, Max Iterations: 200, Batch Size: 1, Accuracy: 0.8947826086956522
+Learning Rate: 0.01, Max Iterations: 200, Batch Size: 10, Accuracy: 0.888695652173913
+Learning Rate: 0.01, Max Iterations: 200, Batch Size: 100, Accuracy: 0.8239130434782609
+Learning Rate: 0.1, Max Iterations: 50, Batch Size: 1, Accuracy: 0.8952173913043479
+Learning Rate: 0.1, Max Iterations: 50, Batch Size: 10, Accuracy: 0.8917391304347826
+Learning Rate: 0.1, Max Iterations: 50, Batch Size: 100, Accuracy: 0.8769565217391304
+Learning Rate: 0.1, Max Iterations: 100, Batch Size: 1, Accuracy: 0.8769565217391304
+Learning Rate: 0.1, Max Iterations: 100, Batch Size: 10, Accuracy: 0.8952173913043479
+Learning Rate: 0.1, Max Iterations: 100, Batch Size: 100, Accuracy: 0.8878260869565218
+Learning Rate: 0.1, Max Iterations: 200, Batch Size: 1, Accuracy: 0.888695652173913
+Learning Rate: 0.1, Max Iterations: 200, Batch Size: 10, Accuracy: 0.8952173913043479
+Learning Rate: 0.1, Max Iterations: 200, Batch Size: 100, Accuracy: 0.888695652173913
+Learning Rate: 0.5, Max Iterations: 50, Batch Size: 1, Accuracy: 0.8939130434782608
+Learning Rate: 0.5, Max Iterations: 50, Batch Size: 10, Accuracy: 0.8965217391304348
+Learning Rate: 0.5, Max Iterations: 50, Batch Size: 100, Accuracy: 0.8891304347826087
+Learning Rate: 0.5, Max Iterations: 100, Batch Size: 1, Accuracy: 0.8682608695652174
+Learning Rate: 0.5, Max Iterations: 100, Batch Size: 10, Accuracy: 0.8965217391304348
+Learning Rate: 0.5, Max Iterations: 100, Batch Size: 100, Accuracy: 0.8921739130434783
+Learning Rate: 0.5, Max Iterations: 200, Batch Size: 1, Accuracy: 0.8904347826086957
+Learning Rate: 0.5, Max Iterations: 200, Batch Size: 10, Accuracy: 0.8978260869565218
+Learning Rate: 0.5, Max Iterations: 200, Batch Size: 100, Accuracy: 0.8934782608695652
+Learning Rate: 1, Max Iterations: 50, Batch Size: 1, Accuracy: 0.89
+Learning Rate: 1, Max Iterations: 50, Batch Size: 10, Accuracy: 0.888695652173913
+Learning Rate: 1, Max Iterations: 50, Batch Size: 100, Accuracy: 0.888695652173913
+Learning Rate: 1, Max Iterations: 100, Batch Size: 1, Accuracy: 0.871304347826087
+Learning Rate: 1, Max Iterations: 100, Batch Size: 10, Accuracy: 0.8943478260869565
+Learning Rate: 1, Max Iterations: 100, Batch Size: 100, Accuracy: 0.8930434782608696
+Learning Rate: 1, Max Iterations: 200, Batch Size: 1, Accuracy: 0.8695652173913043
+Learning Rate: 1, Max Iterations: 200, Batch Size: 10, Accuracy: 0.8873913043478261
+Learning Rate: 1, Max Iterations: 200, Batch Size: 100, Accuracy: 0.8939130434782608
+Best Model - Accuracy: 0.8978260869565218
+Test Accuracy: 0.5086580086580087
+----------------------Q5 - Connection between sigmoid and softmax ----------------------
+
+Softmax Classifier Accuracy: 0.9761904761904762
+Sigmoid Classifier Accuracy: 0.9708994708994709
