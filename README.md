@@ -20,83 +20,19 @@ This repository is dedicated to the CSCE 421 Machine Learning course. It include
 
 ## Machine Learning Topics and Algorithms Checklist
 
-### Fundamentals
-- [ ] Supervised Learning
-- [ ] Unsupervised Learning
-- [ ] Reinforcement Learning
-- [ ] Model Evaluation and Validation
-  - [ ] Cross-Validation
-  - [ ] Bias-Variance Tradeoff
-  - [ ] Overfitting and Underfitting
-- [ ] Feature Engineering
-  - [ ] Feature Scaling
-  - [ ] Feature Selection
-  - [ ] Dimensionality Reduction (e.g., PCA)
-
-### Supervised Learning Algorithms
+## Learning from Data
+- [ ] Decision Trees
+- [ ] Probability
+ - [ ] Bayes Classifier
 - [ ] Linear Regression
 - [ ] Logistic Regression
-- [ ] Decision Trees
-<!-- - [ ] Random Forests
-- [ ] Support Vector Machines (SVM)
-- [ ] k-Nearest Neighbors (k-NN)
-- [ ] Naive Bayes
-- [ ] Gradient Boosting Algorithms
-  - [ ] XGBoost
-  - [ ] LightGBM
-  - [ ] CatBoost -->
+ - [ ] Softmax
+ - [ ] Overfitting
+ - [ ] Loss
+- [ ] Neural Network
+ - [ ] Multi-Layer Perceptron
+ - [ ] CNN
 
-<!-- ## Unsupervised Learning Algorithms
-- [ ] Clustering
-  - [ ] k-Means
-  - [ ] Hierarchical Clustering
-  - [ ] DBSCAN
-- [ ] Principal Component Analysis (PCA)
-- [ ] t-Distributed Stochastic Neighbor Embedding (t-SNE)
-- [ ] Anomaly Detection
-  - [ ] Isolation Forest
-  - [ ] One-Class SVM
-
-## Neural Networks and Deep Learning
-- [ ] Perceptron
-- [ ] Multilayer Perceptron (MLP)
-- [ ] Convolutional Neural Networks (CNN)
-- [ ] Recurrent Neural Networks (RNN)
-  - [ ] Long Short-Term Memory (LSTM)
-  - [ ] Gated Recurrent Units (GRU)
-- [ ] Autoencoders
-- [ ] Generative Adversarial Networks (GANs)
-- [ ] Transfer Learning
-
-## Optimization Techniques
-- [ ] Gradient Descent
-  - [ ] Stochastic Gradient Descent (SGD)
-  - [ ] Mini-Batch Gradient Descent
-- [ ] Adam Optimizer
-- [ ] Learning Rate Scheduling
-
-## Model Evaluation Metrics
-- [ ] Classification Metrics
-  - [ ] Accuracy
-  - [ ] Precision, Recall, F1-Score
-  - [ ] ROC-AUC
-- [ ] Regression Metrics
-  - [ ] Mean Squared Error (MSE)
-  - [ ] Mean Absolute Error (MAE)
-  - [ ] R-Squared
-
-## Advanced Topics
-- [ ] Ensemble Learning
-  - [ ] Bagging
-  - [ ] Boosting
-  - [ ] Stacking
-- [ ] Natural Language Processing (NLP)
-  - [ ] Tokenization
-  - [ ] Word Embeddings (e.g., Word2Vec, GloVe)
-  - [ ] Transformers (e.g., BERT, GPT)
-- [ ] Time Series Analysis
-  - [ ] ARIMA
-  - [ ] Prophet -->
 
 ### Tools and Libraries
 - [ ] Python Libraries
