@@ -20,18 +20,40 @@ This repository is dedicated to the CSCE 421 Machine Learning course. It include
 
 ## Machine Learning Topics and Algorithms Checklist
 
-## Learning from Data
-- [ ] Decision Trees
-- [ ] Probability
- - [ ] Bayes Classifier
-- [ ] Linear Regression
-- [ ] Logistic Regression
- - [ ] Softmax
- - [ ] Overfitting
- - [ ] Loss
+### Learning from Data
+- [x] Decision Trees
+- [x] Probability
+ - [x] Bayes Classifier
+- [x] Linear Regression
+- [x] Logistic Regression
+ - [x] Softmax
+ - [x] Overfitting
+ - [x] Loss
+  - [ ] zero-one
+  - [ ] Log Loss
+  - [ ] Regression Loss
+   - [ ] Mean Squared Error
+   - [ ] Mean Absolute Error
+   - [ ] Mean Bias Error
+   - [ ] Huber Loss
+  - [ ] Classification Loss
+   - [ ] Cross Entropy Loss
+   - [ ] Hinge Loss
+   - [ ] Kullback-Leibler Divergence (KL Divergence)
+  - [ ] Perceptron Loss
+  - [ ] Exponential Loss
+
+#### Neural Network and Deep Learning
+- [ ] Perceptron
+ - [ ] Perceptron Loss
 - [ ] Neural Network
- - [ ] Multi-Layer Perceptron
- - [ ] CNN
+ - [ ] Multi-Layer Perceptron (MLP)
+ - [ ] Activation Function(ReLU, Sigmoid, Tanh, Softmax)
+ - [ ] Back Propagation
+ - [ ] Weight/Batch Initialization
+ 
+- [ ] Convolutional Neural Network (CNN)
+ - [ ] CNN Layers
 
 
 ### Tools and Libraries
@@ -60,6 +82,11 @@ csce421-machine-learning/
   - code/               # Code Implementation
   - HW2.pdf/            # Assignment pdf includes questions that are asked 
   - HW2_Report.pdf/     # Report of What was done in the Homework assignment
+ - HW3/                  # Focussed on MultiLayer Perceptron - ReLU
+  - data/               # MNIST - Digits Data
+  - code/               # Code Implementation
+  - HW3.pdf/            # Assignment pdf includes questions that are asked 
+  - HW3_Report.pdf/     # Report of What was done in the Homework assignment
 - README.md             # This file
 
 
