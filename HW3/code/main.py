@@ -51,10 +51,9 @@ def evaluation(model, best_model_state, best_val_acc):
 
     print(f"Best Validation Accuracy: {best_val_acc:.4f}")
     print(f"Test Accuracy: {test_acc:.4f}")
-    return test_acc
-
-
+    
     ### END YOUR CODE
+    return test_acc
 
 ##### Load Data
 raw_data, labels = load_data(os.path.join(data_dir, train_filename))
@@ -131,19 +130,31 @@ torch.save(best_model_state, "best_mlp_model.pth")
 print("Training complete. Best model saved as best_mlp_model.pth.")
 
 
+# Hyperparameter search to find optimal hidden layer size
+print("\nStarting hyperparameter search for optimal hidden layer size...")
+print("This will help us understand the relationship between model capacity and performance")
+
+#for early stopping
+PATIENCE = 10  #epochs to wait before stopping
+MIN_DELTA = 0.001  #minimum change in validation accuracy to be considered as improvement
+
 best_test_acc = 0.0
 best_hidden_size = HIDDEN_SIZES[0]
+
 
 for hidden_size in HIDDEN_SIZES:
     print("=============================================================================")
     print(f"Training with HIDDEN_SIZE = {hidden_size}")
     print("=============================================================================")
+    print(f"Model architecture: Input -> Linear({hidden_size}) -> ReLU -> Linear(3)")
+    print(f"Total parameters: {sum(p.numel() for p in model.parameters())}")
+
     model = MLP(input_size=train_X_all.shape[1], hidden_size=hidden_size, output_size=3)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
-    # Training loop (same as before)
-    best_val_acc = 0.0
+    # Training loop 
+    best_overall_val_acc = 0.0
     best_model_state = None
 
     for epoch in range(EPOCHS):
@@ -176,16 +187,76 @@ for hidden_size in HIDDEN_SIZES:
         print(f"Epoch [{epoch+1}/{EPOCHS}], Loss: {total_loss / num_batches:.4f}, Val Accuracy: {val_acc:.4f}")
 
         # Save the best validation model
-        if val_acc > best_val_acc:
-            best_val_acc = val_acc
+        if val_acc > best_overall_val_acc:
+            best_overall_val_acc = val_acc
             best_model_state = model.state_dict()
 
+        #with early stopping -- for personal practice and testing
+        # best_val_acc = 0.0
+        # best_model_state = None
+        # patience_counter = 0
+
+        # for epoch in range(EPOCHS):
+        #     model.train()
+        #     total_loss = 0
+        #     num_batches = len(train_X_all) // BATCH_SIZE
+
+        #     for i in range(num_batches):
+        #         start_idx = i * BATCH_SIZE
+        #         end_idx = min((i + 1) * BATCH_SIZE, len(train_X_all))
+
+        #         X_batch = train_X_all[start_idx:end_idx]
+        #         y_batch = train_y_all[start_idx:end_idx]
+
+        #         optimizer.zero_grad()
+        #         outputs = model(X_batch)
+        #         loss = criterion(outputs, y_batch)
+        #         loss.backward()
+        #         optimizer.step()
+
+        #         total_loss += loss.item()
+
+        #     #eval on validation set
+        #     model.eval()
+        #     with torch.no_grad():
+        #         outputs = model(valid_X_all)
+        #         predictions = torch.argmax(outputs, dim=1)
+        #         val_acc = (predictions == valid_y_all).float().mean().item()
+
+        #     print(f"Epoch [{epoch+1}/{EPOCHS}], Loss: {total_loss / num_batches:.4f}, Val Accuracy: {val_acc:.4f}")
+
+        #     #early stopping check
+        #     if val_acc > best_val_acc + MIN_DELTA:
+        #         best_val_acc = val_acc
+        #         best_model_state = model.state_dict()
+        #         patience_counter = 0
+        #     else:
+        #         patience_counter += 1
+        #         if patience_counter >= PATIENCE:
+        #             print(f"Early stopping triggered after {epoch + 1} epochs")
+        #             break
+
     # Evaluate on test set
-    evaluation(model, best_model_state, best_val_acc)
+    test_acc = evaluation(model, best_model_state, best_val_acc)
+    print(f"\nResults for hidden_size = {hidden_size}:")
+    print(f"Best Validation Accuracy: {best_val_acc:.4f}")
+    print(f"Test Accuracy: {test_acc:.4f}")
 
     # Track the best hidden size
-    if best_val_acc > best_test_acc:
-        best_test_acc = best_val_acc
+    if best_overall_val_acc > best_test_acc:
+        best_test_acc = best_overall_val_acc
         best_hidden_size = hidden_size
+        print(f"New best model found! Hidden size: {hidden_size}")
 
 print(f"Best Hidden Size: {best_hidden_size}, Best Test Accuracy: {best_test_acc:.4f}")
+
+print("\n=============================================================================")
+print("Hyperparameter Search Results Summary:")
+print("=============================================================================")
+print(f"Best Hidden Size: {best_hidden_size}")
+print(f"Best Test Accuracy: {best_test_acc:.4f}")
+print("\nAnalysis:")
+print(f"- The optimal hidden layer size was {best_hidden_size} neurons")
+print(f"- This configuration achieved a test accuracy of {best_test_acc:.4f}")
+
+
