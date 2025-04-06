@@ -1,0 +1,86 @@
+Loading and preprocessing 1...
+---Run...
+Epoch 1 Loss 1.610601: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 55.90it/s]
+Doing validation... Validation Acc 0.5374
+Epoch 2 Loss 1.231751: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 55.57it/s]
+Doing validation... Validation Acc 0.5854
+Epoch 3 Loss 1.265233: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 58.43it/s]
+Doing validation... Validation Acc 0.6038
+Epoch 4 Loss 1.004025: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 57.39it/s]
+Doing validation... Validation Acc 0.6232
+Epoch 5 Loss 1.170369: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 58.22it/s]
+Doing validation... Validation Acc 0.6242
+Epoch 6 Loss 1.013995: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 56.25it/s]
+Doing validation... Validation Acc 0.6312
+Epoch 7 Loss 0.920636: 100%|█████████████████████████████████████| 351/351 [00:05<00:00, 58.58it/s]
+Doing validation... Validation Acc 0.6534
+Epoch 8 Loss 1.019601: 100%|█████████████████████████████████████| 351/351 [00:05<00:00, 59.00it/s]
+Doing validation... Validation Acc 0.6668
+Epoch 9 Loss 0.721376: 100%|█████████████████████████████████████| 351/351 [00:05<00:00, 59.09it/s]
+Doing validation... Validation Acc 0.6620
+Epoch 10 Loss 0.840330: 100%|████████████████████████████████████| 351/351 [00:05<00:00, 59.61it/s]
+Doing validation... Validation Acc 0.6668
+Epoch 11 Loss 0.974971: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 57.06it/s]
+Doing validation... Validation Acc 0.6652
+Epoch 12 Loss 0.747311: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 57.75it/s]
+Doing validation... Validation Acc 0.6626
+Epoch 13 Loss 0.744136: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 57.03it/s]
+Doing validation... Validation Acc 0.6662
+Epoch 14 Loss 0.773250: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 57.51it/s]
+Doing validation... Validation Acc 0.6702
+Epoch 15 Loss 0.727146: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 57.63it/s]
+Doing validation... Validation Acc 0.6720
+Epoch 16 Loss 0.713026: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 57.74it/s]
+Doing validation... Validation Acc 0.6724
+Epoch 17 Loss 0.708509: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 55.90it/s]
+Doing validation... Validation Acc 0.6632
+Epoch 18 Loss 0.713062: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 56.12it/s]
+Doing validation... Validation Acc 0.6680
+Epoch 19 Loss 0.756108: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 55.03it/s]
+Doing validation... Validation Acc 0.6692
+Epoch 20 Loss 0.704553: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 54.12it/s]
+Doing validation... Validation Acc 0.6644
+Test accuracy using normalization preprocessing and the default LeNet architecture " 0.6530
+Loading and preprocessing 2...
+---Run...
+Epoch 1 Loss 1.456113: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 53.88it/s]
+Doing validation... Validation Acc 0.5204
+Epoch 2 Loss 1.202768: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 54.84it/s]
+Doing validation... Validation Acc 0.5640
+Epoch 3 Loss 1.096253: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 55.50it/s]
+Doing validation... Validation Acc 0.5714
+Epoch 4 Loss 1.112519: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 54.52it/s]
+Doing validation... Validation Acc 0.5950
+Epoch 5 Loss 0.933277: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 56.42it/s]
+Doing validation... Validation Acc 0.6274
+Epoch 6 Loss 1.043372: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 55.97it/s]
+Doing validation... Validation Acc 0.6144
+Epoch 7 Loss 0.955453: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 56.20it/s]
+Doing validation... Validation Acc 0.6344
+Epoch 8 Loss 0.868686: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 54.50it/s]
+Doing validation... Validation Acc 0.6122
+Epoch 9 Loss 0.877403: 100%|█████████████████████████████████████| 351/351 [00:06<00:00, 54.66it/s]
+Doing validation... Validation Acc 0.6436
+Epoch 10 Loss 0.854203: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 54.21it/s]
+Doing validation... Validation Acc 0.6566
+Epoch 11 Loss 0.934871: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 54.31it/s]
+Doing validation... Validation Acc 0.6612
+Epoch 12 Loss 0.845975: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 53.72it/s]
+Doing validation... Validation Acc 0.6532
+Epoch 13 Loss 0.843254: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 53.87it/s]
+Doing validation... Validation Acc 0.6646
+Epoch 14 Loss 0.681083: 100%|████████████████████████████████████| 351/351 [00:07<00:00, 49.69it/s]
+Doing validation... Validation Acc 0.6498
+Epoch 15 Loss 0.781127: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 52.74it/s]
+Doing validation... Validation Acc 0.6666
+Epoch 16 Loss 0.701422: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 51.27it/s]
+Doing validation... Validation Acc 0.6332
+Epoch 17 Loss 0.703117: 100%|████████████████████████████████████| 351/351 [00:07<00:00, 49.87it/s]
+Doing validation... Validation Acc 0.6594
+Epoch 18 Loss 0.644473: 100%|████████████████████████████████████| 351/351 [00:07<00:00, 48.52it/s]
+Doing validation... Validation Acc 0.6446
+Epoch 19 Loss 0.741603: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 50.66it/s]
+Doing validation... Validation Acc 0.6590
+Epoch 20 Loss 0.686685: 100%|████████████████████████████████████| 351/351 [00:06<00:00, 50.93it/s]
+Doing validation... Validation Acc 0.6536
+Test accuracy without using normalization preprocessing and the default LeNet architecture " 0.6396
